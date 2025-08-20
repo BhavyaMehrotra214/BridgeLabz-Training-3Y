@@ -17,5 +17,6 @@ public class BasicCalculator {
 
         System.out.printf("The addition, subtraction, multiplication and division value of %.2f and %.2f is %.2f, %.2f, %.2f, and %.2f\n",
                 number1, number2, addition, subtraction, multiplication, division);
+       input.close();
     }
 }

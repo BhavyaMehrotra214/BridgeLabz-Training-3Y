@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DistanceConverter {
+public class DistanceCover{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -11,5 +11,6 @@ public class DistanceConverter {
         double miles = yards / 1760;
 
         System.out.printf("The distance is %.2f feet, which is %.2f yards and %.2f miles\n", feet, yards, miles);
+        input.close();
     }
 }

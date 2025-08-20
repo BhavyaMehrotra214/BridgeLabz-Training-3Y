@@ -9,5 +9,6 @@ public class SquareSide {
 
         double side = perimeter / 4;
         System.out.printf("The length of the side is %.2f whose perimeter is %.2f\n", side, perimeter);
+        input.close();
     }
 }

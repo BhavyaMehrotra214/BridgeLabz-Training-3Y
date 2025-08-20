@@ -13,5 +13,6 @@ public class HeightConverter {
 
         System.out.printf("Your height in cm is %.2f while in feet is %d and inches is %.2f\n",
                 heightCm, feet, inches);
+            input.close();
     }
 }

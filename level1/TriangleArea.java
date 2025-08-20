@@ -15,5 +15,6 @@ public class TriangleArea {
         double areaInch2 = areaCm2 / (2.54 * 2.54);
 
         System.out.printf("The area of triangle is %.2f cm² and %.2f inches²\n", areaCm2, areaInch2);
+        input.close();
     }
 }
