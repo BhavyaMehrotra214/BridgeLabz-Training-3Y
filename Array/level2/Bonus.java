@@ -11,7 +11,7 @@ public class Bonus{
 
         double totalBonus = 0, totalOldSalary = 0, totalNewSalary = 0;
 
-        System.out.println("Enter salary and years of service for 10 employees:")
+        System.out.println("Enter salary and years of service for 10 employees:");
         for (int i = 0; i < 10; i++) {
             System.out.println("\nEmployee " + (i + 1) + ":");
 
@@ -41,8 +41,6 @@ public class Bonus{
             totalOldSalary += salary[i];
             totalNewSalary += newSalary[i];
         }
-
-        System.out.println("\n--- Employee Bonus and Salary Details ---");
         for (int i = 0; i < 10; i++) {
             System.out.println("Employee " + (i + 1) + ": Old Salary = " + salary[i] +", Years of Service = " + yearsOfService[i] +", Bonus = " + bonus[i] +", New Salary = " + newSalary[i]);
         }
