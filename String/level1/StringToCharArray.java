@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class StringToCharArray {
+    public static char[] myToCharArray(String str) {
+        char[] arr = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            arr[i] = str.charAt(i);
+        }
+        return arr;
+    }
+    public static boolean compareArrays(char[] a1, char[] a2) {
+        if (a1.length != a2.length) return false;
+        for (int i = 0; i < a1.length; i++) {
+            if (a1[i] != a2[i]) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String text = sc.next();
+
+        char[] customArray = myToCharArray(text);
+
+        
+        char[] builtInArray = text.toCharArray();
+
+    
+        boolean result = compareArrays(customArray, builtInArray);
+
+        
+        System.out.print("Custom char array: ");
+        for (char c : customArray) System.out.print(c + " ");
+        System.out.println();
+
+        System.out.print("Built-in char array: ");
+        for (char c : builtInArray) System.out.print(c + " ");
+        System.out.println();
+
+        System.out.println("Are both arrays equal? " + result);
+
+        sc.close();
+    }
+}                 
+

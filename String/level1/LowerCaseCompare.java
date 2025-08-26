@@ -1,21 +1,18 @@
 import java.util.Scanner;
-public class UpperCaseCompare {
-
-    public static String toUpperCustom(String str) {
+public class LowerCaseCompare {
+    public static String toLowerCustom(String str) {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
-
-            if (ch >= 'a' && ch <= 'z') {
-                result += (char)(ch - 32);
+            if (ch >= 'A' && ch <= 'Z') {
+                result += (char)(ch + 32);
             } else {
                 result += ch; 
             }
         }
         return result;
     }
-
     public static boolean compareStrings(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
@@ -30,18 +27,17 @@ public class UpperCaseCompare {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Enter text: ");
         String text = sc.nextLine();
 
-        String customUpper = toUpperCustom(text);
+        String customLower = toLowerCustom(text);
 
-        String builtInUpper = text.toUpperCase();
 
-        boolean result = compareStrings(customUpper, builtInUpper);
+        String builtInLower = text.toLowerCase();
+        boolean result = compareStrings(customLower, builtInLower);
 
-        System.out.println("Custom Uppercase: " + customUpper);
-        System.out.println("Built-in Uppercase: " + builtInUpper);
+        System.out.println("Custom Lowercase: " + customLower);
+        System.out.println("Built-in Lowercase: " + builtInLower);
         System.out.println("Are both results equal? " + result);
 
         sc.close();
