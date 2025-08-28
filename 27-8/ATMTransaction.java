@@ -76,6 +76,5 @@ public class ATMTransaction{
         if (balance < 0) {
             System.out.println(" Overdraft!");
         }
-    sc.close();
-}
+    }
 }

@@ -56,5 +56,6 @@ public class CricketScoreAnalyzer {
         System.out.println("Average Runs per Over: " + avg);
         System.out.println("Highest scoring over: Over " + highOver + " (" + runs[highOver-1] + " runs)");
         System.out.println("Lowest scoring over: Over " + lowOver + " (" + runs[lowOver-1] + " runs)");
+        sc.close();
     }
 }
