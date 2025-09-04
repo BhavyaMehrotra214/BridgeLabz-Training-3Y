@@ -5,7 +5,6 @@ public class MovieTicketMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MovieTicket ticket = new MovieTicket();
-
         int choice;
         do {
             System.out.println("\n=== Movie Ticket Booking ===");
