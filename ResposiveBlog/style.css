@@ -10,7 +10,6 @@ body {
   color: #333;
 }
 
-/* Grid Container */
 .container {
   display: grid;
   grid-template-areas:
@@ -23,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
 .header {
   grid-area: header;
   background-color: #222;
@@ -50,7 +48,6 @@ body {
   color: #00bcd4;
 }
 
-/* Sidebar */
 .sidebar {
   grid-area: sidebar;
   background-color: #fff;
@@ -77,8 +74,7 @@ body {
   color: #00bcd4;
 }
 
-/* Main Content */
-.main {
+main{
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +97,6 @@ body {
   line-height: 1.6;
 }
 
-/* Footer */
 .footer {
   grid-area: footer;
   background-color: #222;
@@ -111,7 +106,6 @@ body {
   border-radius: 8px;
 }
 
-/* Responsive Design */
 @media (max-width: 800px) {
   .container {
     grid-template-areas:
